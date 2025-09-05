@@ -2,7 +2,7 @@ NAME = program
 CC = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++98
 
-SOURCES = main.cpp 
+SOURCES = main.cpp FileReplacer.cpp Parser.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 
 %.o: %.cpp

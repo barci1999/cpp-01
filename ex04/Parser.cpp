@@ -6,7 +6,7 @@
 /*   By: pablo <pablo@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/05 12:58:32 by pablo             #+#    #+#             */
-/*   Updated: 2025/09/05 13:42:05 by pablo            ###   ########.fr       */
+/*   Updated: 2025/09/05 17:49:06 by pablo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ bool Parser::isValid()
         std::cout << "./program <filename> <search string> <replace string>" << std::endl;
         return(false);
     }
-    if (std::empty(this->filename) || std::empty(this->search) || std::empty(this->change))
+    if (this->filename.empty() || this->search.empty() || this->change.empty())
     {
         std::cout << "Please do not insert empty parameters." << std::endl;
         std::cout << "./program <filename> <search string> <replace string>" << std::endl;
